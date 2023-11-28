@@ -18,9 +18,10 @@ var email:string = "test@test.com";
 var isActive:boolean = true;
 var none:any;
 
-// id = "東京"
-// email = 5
-// isActive = "横浜"
+// none = "YSE";
+// none = 5;
 
-none = "YSE";
-none = 5;
+console.log(id, typeof id);
+console.log(email, typeof email);
+console.log(isActive, typeof isActive);
+console.log(none, typeof none);
