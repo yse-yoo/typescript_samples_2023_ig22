@@ -19,7 +19,7 @@ var item3: Item = {
     price: 300,
 }
 // var items:object[] = [item1, item2, item3];
-var items = [item1, item2, item3];
+var items: Item[] = [item1, item2, item3];
 var borderPrice = 300;
 var filterItems = items.filter((item) => item.price > borderPrice)
 console.log(filterItems)
@@ -50,8 +50,12 @@ data = "Tokyo";
 console.log(data)
 
 // any
-function findItem(id: number): any {
+// function findItem(id: number): any {
+//     return items.find((item) => item.id == id);
+// }
+// var item: Item = findItem(2);
+function findItem(id: number): Item | undefined {
     return items.find((item) => item.id == id);
 }
-var item: Item = findItem(2);
+var item = findItem(2);
 console.log(item);
