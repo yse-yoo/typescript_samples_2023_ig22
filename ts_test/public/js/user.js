@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var user = {
     id: 1,
     name: {
@@ -10,6 +8,7 @@ var user = {
     isActive: true,
 };
 console.log(user);
+export {};
 // var user: {
 //     id: number;
 //     name: {
