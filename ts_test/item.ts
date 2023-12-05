@@ -16,7 +16,7 @@ var item3 = {
     name: "ほうじ茶",
     price: 300,
 }
-var items:object[] = [item1, item2, item3];
+// var items:object[] = [item1, item2, item3];
+var items = [item1, item2, item3];
 const borderPrice = 300
-console.log(items)
-// items.filter((item) => item.price > borderPrice )
+items.filter((item) => item.price > borderPrice )
