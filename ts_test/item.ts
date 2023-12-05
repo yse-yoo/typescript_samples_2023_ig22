@@ -35,10 +35,23 @@ console.log(filterItems)
 //     return totalPrice;
 // }
 // arrow function
-const caclculateTotalPrice = (price:number, amount:number): number => {
+const caclculateTotalPrice = (price: number, amount: number): number => {
     var totalPrice = price * amount;
     return totalPrice;
 }
 
 var totalPrice = caclculateTotalPrice(item1.price, 5);
 console.log(totalPrice);
+
+// Union
+var data: number | string;
+data = 10;
+data = "Tokyo";
+console.log(data)
+
+// any
+function findItem(id: number): any {
+    return items.find((item) => item.id == id);
+}
+var item: Item = findItem(2);
+console.log(item);
