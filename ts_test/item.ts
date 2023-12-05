@@ -25,7 +25,17 @@ var filterItems = items.filter((item) => item.price > borderPrice)
 console.log(filterItems)
 
 // function
-function caclculateTotalPrice(price:number, amount:number): number {
+// function caclculateTotalPrice(price:number, amount:number): number {
+//     var totalPrice = price * amount;
+//     return totalPrice;
+// }
+// anonymous function
+// const caclculateTotalPrice = function(price:number, amount:number): number {
+//     var totalPrice = price * amount;
+//     return totalPrice;
+// }
+// arrow function
+const caclculateTotalPrice = (price:number, amount:number): number => {
     var totalPrice = price * amount;
     return totalPrice;
 }
