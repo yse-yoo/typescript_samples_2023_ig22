@@ -68,11 +68,18 @@ if (item == undefined) {
 }
 
 // callback
-function purchase(id:number, amount:number, callback:(price: number, amount: number) => number) {
+function purchase(id:number, amount:number, callback:(item:Item, amount:number) => boolean) {
     var item = findItem(id);
     if (item) {
-        callback(item.price, amount);
+        callback(item, amount);
     }
 }
 
-purchase(1, 5, caclculateTotalPrice);
+function payment(item:Item, amount:number) {
+    //TODO payment
+    var totalPrice = caclculateTotalPrice(item.price, amount);
+    console.log("Payment:" + totalPrice);
+    return true;
+}
+
+purchase(1, 5, payment);
