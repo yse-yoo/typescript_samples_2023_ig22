@@ -15,6 +15,7 @@ var id = 1;
 var email = "test@test.com";
 var isActive = true;
 var none;
+//email = 1000
 // none = "YSE";
 // none = 5;
 console.log(id, typeof id);

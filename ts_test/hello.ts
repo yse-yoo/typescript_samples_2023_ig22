@@ -18,6 +18,8 @@ var email:string = "test@test.com";
 var isActive:boolean = true;
 var none:any;
 
+//email = 1000
+
 // none = "YSE";
 // none = 5;
 
