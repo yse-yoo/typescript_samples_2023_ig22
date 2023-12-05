@@ -59,5 +59,9 @@ console.log(data)
 function findItem(id: number): Item | undefined {
     return items.find((item) => item.id == id);
 }
-var item = findItem(2);
-console.log(item);
+var item = findItem(3);
+if (item == undefined) {
+    console.log("Not found")
+} else {
+    console.log(item);
+}
