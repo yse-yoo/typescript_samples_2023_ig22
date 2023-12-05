@@ -26,9 +26,19 @@ type User = {
     isActive: boolean;
 }
 
+// interface User {
+//     id: number;
+//     name: {
+//         first: string;
+//         last: string;
+//     };
+//     email: string;
+//     isActive: boolean;
+// }
+
 var user: User = {
-     id: 1,
-     name: {
+    id: 1,
+    name: {
         first: "Taro",
         last: "Tokyo",
     },
