@@ -19,4 +19,5 @@ var item3 = {
 // var items:object[] = [item1, item2, item3];
 var items = [item1, item2, item3];
 const borderPrice = 300
-items.filter((item) => item.price > borderPrice )
+var filterItems = items.filter((item) => item.price > borderPrice )
+console.log(filterItems)
