@@ -54,6 +54,8 @@ console.log(data)
 //     return items.find((item) => item.id == id);
 // }
 // var item: Item = findItem(2);
+
+// Union: Item or undefined
 function findItem(id: number): Item | undefined {
     return items.find((item) => item.id == id);
 }
