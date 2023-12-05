@@ -1,4 +1,22 @@
-var user: {
+// var user: {
+//     id: number;
+//     name: {
+//         first: string;
+//         last: string;
+//     };
+//     email: string;
+//     isActive: boolean;
+// } = {
+//     id: 1,
+//     name: {
+//         first: "Taro",
+//         last: "Tokyo",
+//     },
+//     email: "test@test.com",
+//     isActive: true,
+// }
+
+type User = {
     id: number;
     name: {
         first: string;
@@ -6,9 +24,11 @@ var user: {
     };
     email: string;
     isActive: boolean;
-} = {
-    id: 1,
-    name: {
+}
+
+var user: User = {
+     id: 1,
+     name: {
         first: "Taro",
         last: "Tokyo",
     },
@@ -17,14 +37,3 @@ var user: {
 }
 
 console.log(user)
-
-//型推論（Type Inference）  
-// var user  = {
-//      id: 1,
-//      name: {
-//         first: "Taro",
-//         last: "Tokyo",
-//     },
-//     email: "test@test.com",
-//     isActive: true,
-// }
