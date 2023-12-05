@@ -67,12 +67,12 @@ if (item == undefined) {
     console.log(item);
 }
 
-function purchase(id:number, amount:number) {
+// callback
+function purchase(id:number, amount:number, callback:(price: number, amount: number) => number) {
     var item = findItem(id);
     if (item) {
-        var message = `${item.name}:${amount}個`;
-        console.log(message);
+        callback(item.price, amount);
     }
 }
 
-purchase(1, 5);
+purchase(1, 5, caclculateTotalPrice);
