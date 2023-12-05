@@ -1,3 +1,4 @@
+"use strict";
 // TypeInference で string型が自動的に設定
 var message = "Hello!!!!";
 // string型に number型は入れられない
