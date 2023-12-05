@@ -1,14 +1,4 @@
-export type User = {
-    id: number;
-    name: {
-        first: string;
-        last: string;
-    };
-    email: string;
-    isActive: boolean;
-}
-
-// interface User {
+// export type User = {
 //     id: number;
 //     name: {
 //         first: string;
@@ -17,3 +7,19 @@ export type User = {
 //     email: string;
 //     isActive: boolean;
 // }
+
+export type Item = {
+    id: number;
+    name: string;
+    price: number;
+}
+
+export interface User {
+    id: number;
+    name: {
+        first: string;
+        last: string;
+    };
+    email: string;
+    isActive: boolean;
+}

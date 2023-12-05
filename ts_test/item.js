@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var itemNames = ["コーヒー", "紅茶", "ほうじ茶"];
 console.log(itemNames);
 var item1 = {
